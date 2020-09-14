@@ -1,0 +1,54 @@
+{
+    "all_phonemes": [
+        "br", "cl", "pau", "sil", "a", "i", "ye", "u", "vu", "va", "wi", "vi", "we", "ve", "wo", "vo", "bya", "byu", "byo", "e", "o", "ka", "ga", "ki", "gi", "kye", "gye", "kya", "gya", "kyu", "gyu", "kyo", "gyo", "ku", "gu", "kwa", "gwa", "kwi", "gwi", "kwu", "gwu", "kwe", "gwe", "kwo", "gwo", "ke", "ge", "ko", "go", "sa", "za", "shI", "ji", "si", "she", "je", "sha", "ja", "shu", "ju", "sho", "jo", "su", "zu", "zi", "se", "ze", "so", "zo", "ta", "da", "chi", "che", "cha", "chu", "cho", "tsu", "tsa", "tsi", "tse", "tso", "te", "de", "ti", "di", "dye", "tya", "dya", "tyu", "dyu", "tyo", "dyo", "to", "do", "tu", "du", "na", "ni", "nye", "nya", "nyu", "nyo", "nu", "ne", "no", "ha", "ba", "pa", "hi", "bi", "pi", "hye", "bye", "pye", "hya", "pya", "hyu", "pyu", "hyo", "pyo", "fu", "bu", "pu", "fa", "fi", "fe", "fo", "he", "be", "pe", "ho", "bo", "po", "ma", "mi", "mye", "mya", "myu", "myo", "mu", "me", "mo", "ya", "yu", "yo", "ra", "ri", "rye", "rya", "ryu", "ryo", "ru", "re", "ro", "wa", "N"
+    ],
+
+    "phoneme_classification": {
+        "Muon": ["sil", "pau"],
+        "Muon_and_br": ["sil", "pau", "br"],
+        "Vowels": ["a", "i", "u", "e", "o"],
+        "Vowels_and_N": ["a", "i", "u", "e", "o", "N"],
+
+        "x_a": ["a", "va", "bya", "ka", "ga", "kya", "gya", "kwa", "gwa", "sa", "za", "sha", "ja", "ta", "da", "cha", "tsa", "tya", "dya", "na", "nya", "ha", "ba", "pa", "hya", "pya", "fa", "ma", "mya", "ya", "ra", "rya", "wa"],
+        "x_i": ["i", "wi", "vi", "ki", "gi", "kwi", "gwi", "ji", "si", "zi", "chi", "tsi", "ti", "di", "ni", "hi", "bi", "pi", "fi", "mi", "ri"],
+        "x_u": ["u", "vu", "byu", "kyu", "gyu", "ku", "gu", "kwu", "gwu", "shu", "ju", "su", "zu", "chu", "tsu", "tyu", "dyu", "tu", "du", "nyu", "nu", "hyu", "pyu", "fu", "bu", "pu", "myu", "mu", "yu", "ryu", "ru"],
+        "x_e": ["ye", "we", "ve", "e", "kye", "gye", "kwe", "gwe", "ke", "ge", "she", "je", "se", "ze", "che", "tse", "te", "de", "dye", "nye", "ne", "hye", "bye", "pye", "fe", "he", "be", "pe", "mye", "me", "rye", "re"],
+        "x_o": ["wo", "vo", "byo", "o", "kyo", "gyo", "kwo", "gwo", "ko", "go", "sho", "jo", "so", "zo", "cho", "tso", "tyo", "dyo", "to", "do", "nyo", "no", "hyo", "pyo", "fo", "ho", "bo", "po", "myo", "mo", "yo", "ryo", "ro"],
+
+        "t_x_and_ts_x": ["ta", "te", "ti", "to", "tu", "tsu", "tsa", "tsi", "tse", "tso"],
+        "s_x_and_sh_x": ["ta", "te", "ti", "to", "tu", "tsu", "tsa", "tsi", "tse", "tso"],
+
+        "k_x": ["ka", "ki", "ku", "ke", "ko"],
+        "kw_x": ["kwa", "kwi", "kwu", "kwe", "kwo"],
+        "ky_x": ["kye", "kya", "kyu", "kyo"],
+        "s_x": ["sa", "si", "su", "se", "so"],
+        "sh_x": ["she", "sha", "shu", "sho"],
+        "t_x": ["ta", "te", "ti", "to", "tu"],
+        "ts_x": ["tsu", "tsa", "tsi", "tse", "tso"],
+        "ch_x": ["chi", "che", "cha", "chu", "cho"],
+        "ty_x": ["tya", "tyu", "tyo"],
+        "n_x": ["na", "ni", "nu", "ne", "no"],
+        "ny_x": ["nye", "nya", "nyu", "nyo"],
+        "h_x": ["ha", "hi", "he", "ho"],
+        "f_x": ["fu", "fa", "fi", "fe", "fo"],
+        "hy_x": ["hye", "hya", "hyu", "hyo"],
+        "m_x": ["ma", "mi", "mu", "me", "mo"],
+        "my_x": ["mye", "mya", "myu", "myo"],
+        "y_x": ["ye", "ya", "yu", "yo"],
+        "r_x": ["ra", "ri", "ru", "re", "ro"],
+        "ry_x": ["rye", "rya", "ryu", "ryo"],
+        "w_x": ["wi", "we", "wo", "wa"],
+        "g_x": ["ga", "gi", "gu", "ge", "go"],
+        "gy_x": ["gye", "gya", "gyu", "gyo"],
+        "gw_x": ["gwa", "gwi", "gwu", "gwe", "gwo"],
+        "z_x": ["za", "zu", "zi", "ze", "zo"],
+        "j_x": ["ji", "je", "ja", "ju", "jo"],
+        "d_x": ["da", "de", "di", "do", "du"],
+        "dy_x": ["dye", "dya", "dyu", "dyo"],
+        "b_x": ["ba", "bi", "bu", "be", "bo"],
+        "by_x": ["bya", "byu", "byo", "bye"],
+        "v_x": ["vu", "va", "vi", "ve", "vo"],
+        "p_x": ["pa", "pi", "pu", "pe", "po"],
+        "py_x": ["pye", "pya", "pyu", "pyo"]
+    }
+}
