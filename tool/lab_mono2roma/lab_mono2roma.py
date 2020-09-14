@@ -90,7 +90,7 @@ def main():
         # 変換先のかな文字ラベル
         roma_label = intermadiate_to_romalabel(intermadiate)
         # ファイル出力
-        path_roma_label = f'out/{now}/{splitext(basename(path_mono_label))[0]}_roma.lab'
+        path_roma_label = f'out/{now}/{basename(path_mono_label)}'
         roma_label.write(path_roma_label)
 
 
