@@ -18,6 +18,19 @@
 - 下記動画投稿時に使用していたファイルです。
   - [【AIおにくる】きみも悪い人でよかった【NNSVSカバー】 - ニコニコ動画](https://www.nicovideo.jp/watch/sm37452833 https://www.nicovideo.jp/watch/sm37452833)
 
+### jp_qst001_nnsvs_simple_4-2.hed
+
+- 282次元
+- N_is_n の項目を削除
+
+### jp_qst001_nnsvs_simple_4-3.hed
+
+- 285次元
+- N_is_n の項目あり
+- Yuusei_Shiin から N を削除
+  - simple_4 が r と N を混同して学習するのを対策したい。
+- 2020年10月09日 作成
+
 ### jp_qst001_nnsvs_simple_5.hed
 
 - 217次元
