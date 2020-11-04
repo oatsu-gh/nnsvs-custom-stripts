@@ -8,7 +8,7 @@
 
 いずれも kiritan-singing および sinsy のjp_qst001.hed （2020年10月以前のもの）を改造したもの。
 
-### jp_qst_mono_001
+### jp_myqst_mono_001
 
 - 187次元
 
