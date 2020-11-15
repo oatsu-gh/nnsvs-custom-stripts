@@ -54,11 +54,11 @@ QS "p5_R-Phone_ch"  {*+ch=*}
 QS "p3_L-Phone_d"   {*^d-*}
 QS "p4_C-Phone_d"   {*-d+*}
 QS "p5_R-Phone_d"   {*+d=*}
-QS "p4_C-Phone_dy"  {*-dy+*}
 QS "p3_L-Phone_dy"  {*^dy-*}
+QS "p4_C-Phone_dy"  {*-dy+*}
 QS "p5_R-Phone_dy"  {*+dy=*}
-QS "p4_C-Phone_e"   {*-e+*,*-E+*}
 QS "p3_L-Phone_e"   {*^e-*,*^E-*}
+QS "p4_C-Phone_e"   {*-e+*,*-E+*}
 QS "p5_R-Phone_e"   {*+e=*,*+E=*}
 QS "p3_L-Phone_f"   {*^f-*}
 QS "p4_C-Phone_f"   {*-f+*}
