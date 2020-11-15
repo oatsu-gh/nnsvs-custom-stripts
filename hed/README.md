@@ -4,11 +4,19 @@
 
 どれか1つのファイルを使って学習させます。
 
+## hed を作るときの注意
+
+- d1, e1, f1 はCQSの最初に置かないといけない。
+
 ## ファイル比較
 
 いずれも kiritan-singing および sinsy のjp_qst001.hed （2020年10月以前のもの）を改造したもの。
 
-### jp_qst_crazy_mono_001.hed
+---
+
+### 2020年11月以降のファイル
+
+#### jp_qst_crazy_mono_001.hed
 
 - 184次元
 
@@ -19,7 +27,7 @@
 - 音素フラグを無視
 - question の名前を一部整理
 
-#### e57, e58 を変更
+##### e57, e58 を変更
 
 変更前
 
@@ -35,21 +43,34 @@ CQS "e57" {~([pm]\d+)+}
 CQS "e58" {+([pm]\d+)!}
 ```
 
-### jp_qst_crazy_mono_002.hed
+#### jp_qst_crazy_mono_002.hed
 
 - 192次元
 - 2020年11月15日作成
 - 001から派生、**フレーズ内ノート数**（e18 - e25）を取得するようにした。
 - 母音無性化：区別せず同一視
 
-### jp_qst_crazy_mono_002-2.hed
+#### jp_qst_crazy_mono_002-2.hed
 
 - 183次元
 - 2020年11月15日作成
 - 002から派生。"JPN"などの**言語情報を無効化**（a4, b4, c4）
 - 母音無性化：区別せず同一視
 
-### jp_qst001_nnsvs_simple_4.hed
+#### jp_qst_crazy_mono_003.hed
+
+- 178次元
+
+- 2020年11月15日作成
+- 002-2 から派生
+- スラー情報を無効化（e26, e27）
+- ノート長を拍数でカウントするのを無効化（d8, e8, f8）
+
+---
+
+### 2020年10月以前のファイル
+
+#### jp_qst001_nnsvs_simple_4.hed
 
 - 285次元
 - 強弱記号：**取得**
@@ -59,12 +80,12 @@ CQS "e58" {+([pm]\d+)!}
 - 下記動画投稿時に使用していたファイルです。
   - [【AIおにくる】きみも悪い人でよかった【NNSVSカバー】 - ニコニコ動画](https://www.nicovideo.jp/watch/sm37452833 https://www.nicovideo.jp/watch/sm37452833)
 
-### jp_qst001_nnsvs_simple_4-2.hed
+#### jp_qst001_nnsvs_simple_4-2.hed
 
 - 282次元
 - N_is_n の項目を削除
 
-### jp_qst001_nnsvs_simple_4-3.hed
+#### jp_qst001_nnsvs_simple_4-3.hed
 
 - 285次元
 - N_is_n の項目あり
@@ -72,7 +93,7 @@ CQS "e58" {+([pm]\d+)!}
   - simple_4 が r と N を混同して学習するのを対策したい。
 - 2020年10月09日 作成
 
-### jp_qst001_nnsvs_simple_4-4.hed
+#### jp_qst001_nnsvs_simple_4-4.hed
 
 - 279次元
 - N_is_n なし
@@ -80,7 +101,7 @@ CQS "e58" {+([pm]\d+)!}
   - N か n か知らないけど、r などの周辺で勝手に登場するのを対策したい。
 - 2020年10月19日作成
 
-### jp_qst001_nnsvs_simple_5.hed
+#### jp_qst001_nnsvs_simple_5.hed
 
 - 217次元
 - 強弱記号：無視
@@ -98,7 +119,7 @@ CQS "e58" {+([pm]\d+)!}
 - 有声子音と無声子音：区別あり
 - 母音の無声化：**非対応**
 
-### jp_qst001_nnsvs_simple_6_LL_noAIUEO.hed
+#### jp_qst001_nnsvs_simple_6_LL_noAIUEO.hed
 
 - 228次元
 - **2つ前の音素(p2) および 2つ後の音素(p4) を扱える。**
@@ -108,7 +129,7 @@ CQS "e58" {+([pm]\d+)!}
 - 有声子音と無声子音の区別あり
 - 母音の無声化：**非対応**
 -
-### jp_qst001_nnsvs_simple_6_LLRR_noAIUEO.hed
+#### jp_qst001_nnsvs_simple_6_LLRR_noAIUEO.hed
 
 - 275次元
 - **2つ前の音素(p2) および 2つ後の音素(p4) を扱える。**
@@ -118,7 +139,7 @@ CQS "e58" {+([pm]\d+)!}
 - 有声子音と無声子音の区別あり
 - 母音の無声化：**非対応**
 
-### jp_qst_crazy_roma_001.hed
+#### jp_qst_crazy_roma_001.hed
 - 447次元
 - **ローマ字CV音素用**
 - 現在の音素と、前後1音素ずつのみ取得
