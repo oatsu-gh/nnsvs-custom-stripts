@@ -145,6 +145,10 @@ QS "p3_L-Phone_z"   {*^z-*}
 QS "p4_C-Phone_z"   {*-z+*}
 QS "p5_R-Phone_z"   {*+z=*}
 
+CQS "d1" {/D:(\NOTE)!}
+CQS "e1" {/E:(\NOTE)]}
+CQS "f1" {/F:(\NOTE)#}
+
 CQS "p12" {-(\d+)!}
 CQS "p13" {!(\d+)[}
 CQS "p14" {[(\d+)$}
@@ -172,14 +176,12 @@ QS "c4_R-Syllable_Language=JPN_0" {*@JPN&0/D:*}
 QS "c4_R-Syllable_Language=JPN_1" {*@JPN&1/D:*}
 
 
-CQS "d1" {/D:(\NOTE)!}
 CQS "d2" {!(\d+)#}
 CQS "d3" {#(\d+)$}
 CQS "d6" {|(\d+)&}
 CQS "d7" {&(\d+);}
 CQS "d8" {;(\d+)-}
 
-CQS "e1" {/E:(\NOTE)]}
 CQS "e2" {](\d+)^}
 CQS "e3" {^(\d+)=}
 
@@ -200,7 +202,6 @@ CQS "e27" {](\d+)-}
 CQS "e57" {~([pm]\d+)+}
 CQS "e58" {+([pm]\d+)!}
 
-CQS "f1" {/F:(\NOTE)#}
 CQS "f2" {#(\d+)#}
 CQS "f3" {#(\d+)-}
 CQS "f6" {$(\d+)+}
