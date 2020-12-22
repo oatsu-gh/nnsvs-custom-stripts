@@ -1,5 +1,4 @@
-#! /usr/bin/env python3
-# coding: utf-8
+#!/usr/bin/env python3
 # Copyright (c) 2020 oatsu
 """
 ローマ字の音素を、先頭音素や母音で分類する

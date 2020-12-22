@@ -49,7 +49,7 @@ def generate_csv(loss_train_no_dev, loss_dev, path_csv_out):
 
 def main():
     path_log_dir = input('path_log_dir: ').strip('"')
-    list_path_log = glob(f'{path_log_dir}/**/*train.log', recursive=True)
+    list_path_log = glob(f'{path_log_dir}/**/*.log', recursive=True)
     for i, path_log in enumerate(tqdm(list_path_log)):
         loss_train_no_dev, loss_dev = read_log(path_log)
         # datetime_now = datetime.now().strftime("%Y%m%d_%H%M%S")

@@ -4,8 +4,6 @@
     ],
 
     "phoneme_classification": {
-        "Muon": ["sil", "pau"],
-        "Muon_and_br": ["sil", "pau", "br"],
         "Vowels": ["a", "i", "u", "e", "o"],
         "Vowels_and_N": ["a", "i", "u", "e", "o", "N"],
 
@@ -14,9 +12,6 @@
         "x_u": ["u", "vu", "byu", "kyu", "gyu", "ku", "gu", "kwu", "gwu", "shu", "ju", "su", "zu", "chu", "tsu", "tyu", "dyu", "tu", "du", "nyu", "nu", "hyu", "pyu", "fu", "bu", "pu", "myu", "mu", "yu", "ryu", "ru"],
         "x_e": ["ye", "we", "ve", "e", "kye", "gye", "kwe", "gwe", "ke", "ge", "she", "je", "se", "ze", "che", "tse", "te", "de", "dye", "nye", "ne", "hye", "bye", "pye", "fe", "he", "be", "pe", "mye", "me", "rye", "re"],
         "x_o": ["wo", "vo", "byo", "o", "kyo", "gyo", "kwo", "gwo", "ko", "go", "sho", "jo", "so", "zo", "cho", "tso", "tyo", "dyo", "to", "do", "nyo", "no", "hyo", "pyo", "fo", "ho", "bo", "po", "myo", "mo", "yo", "ryo", "ro"],
-
-        "t_x_and_ts_x": ["ta", "te", "ti", "to", "tu", "tsu", "tsa", "tsi", "tse", "tso"],
-        "s_x_and_sh_x": ["ta", "te", "ti", "to", "tu", "tsu", "tsa", "tsi", "tse", "tso"],
 
         "k_x": ["ka", "ki", "ku", "ke", "ko"],
         "kw_x": ["kwa", "kwi", "kwu", "kwe", "kwo"],

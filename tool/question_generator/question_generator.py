@@ -18,8 +18,9 @@ def str_phone_questions(list_all_phonemes, dict_phoneme_classification, mode):
     mode : 'LL', 'L', 'C', 'R', 'RR' のいずれかを選択
     """
     # フルコンテキストラベルから検出するための左右の文字列
-    sign_1, sign_2 = {'LL': ('*@', '^*'), 'L': ('*^', '-*'), 'C': ('*-', '+*'),
-                      'R': ('*+', '=*'), 'RR': ('*=', '_*')}[mode]
+    d = {'LL': ('*@', '^*'), 'L': ('*^', '-*'), 'C': ('*-', '+*'),
+         'R': ('*+', '=*'), 'RR': ('*=', '_*')}
+    sign_1, sign_2 = d[mode]
 
     # 1行分の文字列のリスト。改行文字なし。
     lines = []
@@ -104,7 +105,7 @@ def main():
     s += str_phone_questions(list_all_phonemes, dict_phoneme_classification, mode='C')
     s += str_phone_questions(list_all_phonemes, dict_phoneme_classification, mode='R')
     s += '\n'
-    s += str_fixed_qs_and_cqs()
+    # s += str_fixed_qs_and_cqs()
     with open('result_question_generator.hed', mode='w', encoding='utf-8') as ft:
         ft.write(s)
 

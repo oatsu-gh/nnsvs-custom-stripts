@@ -46,21 +46,32 @@ def monolabel_to_intermediate(mono_label, d_phoneme_category):
     return l_temp_2d
 
 
-def intermadiate_to_romalabel(intermadiate_2dlist):
+def intermadiate_to_romalabel(intermadiate_2dlist, base='consonant'):
     """
     intermadiate_2dlist:
         [[子音のラベル, 母音のラベル], [子音のラベル, 母音のラベル], [母音のラベル], ...]
     return:
         [CVラベル, CVラベル, CVラベル, ...]
     """
+    base_idx = {'consonant': 0, 'vowel': -1}[base]
     roma_label = up.label.Label()
     for inner_list in intermadiate_2dlist:
         roma_phoneme = up.label.Phoneme()
-        roma_phoneme.start = inner_list[0].start
+        roma_phoneme.start = inner_list[base_idx].start
         roma_phoneme.end = inner_list[-1].end
         roma_phoneme.symbol = ''.join(ph.symbol for ph in inner_list)
         roma_label.append(roma_phoneme)
     return roma_label
+
+
+def uppercase_to_lowercase(label: up.label.Label):
+    """
+    無声化の母音を小文字に戻す。
+    hedを作るのが楽になる。
+    """
+    translation_table = str.maketrans('AIUEO', 'aiueo')
+    for phoneme in label:
+        phoneme.symbol = phoneme.symbol.translate(translation_table)
 
 
 def main():
@@ -74,14 +85,14 @@ def main():
     # 変換元のモノフォンラベルのパスを入力させる
     path_input = input('Input path of mono-label directory\n>>> ')
     if isfile(path_input):
-        path_mono_label_dir = [path_input]
+        path_mono_label_files = [path_input]
     else:
-        path_mono_label_dir = glob(f'{path_input}/**/*.lab', recursive=True)
+        path_mono_label_files = glob(f'{path_input}/**/*.lab', recursive=True)
 
     now = datetime.now().strftime('%Y%m%d_%H%M%S')
     makedirs(f'out/{now}', exist_ok=True)
     # モノフォンラベルをかなラベルにする。
-    for path_mono_label in path_mono_label_dir:
+    for path_mono_label in path_mono_label_files:
         print(f'  {path_mono_label}')
         # 変換元のモノフォンラベル
         mono_label = up.label.load(path_mono_label)
@@ -89,6 +100,8 @@ def main():
         intermadiate = monolabel_to_intermediate(mono_label, d_phoneme_category)
         # 変換先のかな文字ラベル
         roma_label = intermadiate_to_romalabel(intermadiate)
+        # 母音無性化を無効にする
+        uppercase_to_lowercase(roma_label)
         # ファイル出力
         path_roma_label = f'out/{now}/{basename(path_mono_label)}'
         roma_label.write(path_roma_label)
