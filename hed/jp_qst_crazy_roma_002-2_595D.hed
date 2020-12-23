@@ -1,6 +1,10 @@
+QS "C-Phone_Language_Independent_Break"     {b@*}
+QS "C-Phone_CV" {c@*}
+QS "C-Phone_Language_Independent_Break"     {b@*}
+
 QS "L-Phone_Vowels" {*^a-*,*^i-*,*^u-*,*^e-*,*^o-*}
 QS "L-Phone_Vowels_and_N" {*^a-*,*^i-*,*^u-*,*^e-*,*^o-*,*^N-*}
-QE "L-Phone_pau_and_sil" {*^pau-*,*^sil-*}
+QS "L-Phone_pau_and_sil" {*^pau-*,*^sil-*}
 
 QS "L-Phone_x_a" {*^a-*,*^va-*,*^bya-*,*^ka-*,*^ga-*,*^kya-*,*^gya-*,*^kwa-*,*^gwa-*,*^sa-*,*^za-*,*^sha-*,*^ja-*,*^ta-*,*^da-*,*^cha-*,*^tsa-*,*^tya-*,*^dya-*,*^na-*,*^nya-*,*^ha-*,*^ba-*,*^pa-*,*^hya-*,*^pya-*,*^fa-*,*^ma-*,*^mya-*,*^ya-*,*^ra-*,*^rya-*,*^wa-*}
 QS "L-Phone_x_i" {*^i-*,*^wi-*,*^vi-*,*^ki-*,*^gi-*,*^kwi-*,*^gwi-*,*^ji-*,*^si-*,*^zi-*,*^chi-*,*^tsi-*,*^ti-*,*^di-*,*^ni-*,*^hi-*,*^bi-*,*^pi-*,*^fi-*,*^mi-*,*^ri-*}
@@ -8,38 +12,6 @@ QS "L-Phone_x_u" {*^u-*,*^vu-*,*^byu-*,*^kyu-*,*^gyu-*,*^ku-*,*^gu-*,*^kwu-*,*^g
 QS "L-Phone_x_e" {*^ye-*,*^we-*,*^ve-*,*^e-*,*^kye-*,*^gye-*,*^kwe-*,*^gwe-*,*^ke-*,*^ge-*,*^she-*,*^je-*,*^se-*,*^ze-*,*^che-*,*^tse-*,*^te-*,*^de-*,*^dye-*,*^nye-*,*^ne-*,*^hye-*,*^bye-*,*^pye-*,*^fe-*,*^he-*,*^be-*,*^pe-*,*^mye-*,*^me-*,*^rye-*,*^re-*}
 QS "L-Phone_x_o" {*^wo-*,*^vo-*,*^byo-*,*^o-*,*^kyo-*,*^gyo-*,*^kwo-*,*^gwo-*,*^ko-*,*^go-*,*^sho-*,*^jo-*,*^so-*,*^zo-*,*^cho-*,*^tso-*,*^tyo-*,*^dyo-*,*^to-*,*^do-*,*^nyo-*,*^no-*,*^hyo-*,*^pyo-*,*^fo-*,*^ho-*,*^bo-*,*^po-*,*^myo-*,*^mo-*,*^yo-*,*^ryo-*,*^ro-*}
 
-QS "L-Phone_k_x" {*^ka-*,*^ki-*,*^ku-*,*^ke-*,*^ko-*}
-QS "L-Phone_kw_x" {*^kwa-*,*^kwi-*,*^kwu-*,*^kwe-*,*^kwo-*}
-QS "L-Phone_ky_x" {*^kye-*,*^kya-*,*^kyu-*,*^kyo-*}
-QS "L-Phone_s_x" {*^sa-*,*^si-*,*^su-*,*^se-*,*^so-*}
-QS "L-Phone_sh_x" {*^she-*,*^sha-*,*^shu-*,*^sho-*}
-QS "L-Phone_t_x" {*^ta-*,*^te-*,*^ti-*,*^to-*,*^tu-*}
-QS "L-Phone_ts_x" {*^tsu-*,*^tsa-*,*^tsi-*,*^tse-*,*^tso-*}
-QS "L-Phone_ch_x" {*^chi-*,*^che-*,*^cha-*,*^chu-*,*^cho-*}
-QS "L-Phone_ty_x" {*^tya-*,*^tyu-*,*^tyo-*}
-QS "L-Phone_n_x" {*^na-*,*^ni-*,*^nu-*,*^ne-*,*^no-*}
-QS "L-Phone_ny_x" {*^nye-*,*^nya-*,*^nyu-*,*^nyo-*}
-QS "L-Phone_h_x" {*^ha-*,*^hi-*,*^he-*,*^ho-*}
-QS "L-Phone_f_x" {*^fu-*,*^fa-*,*^fi-*,*^fe-*,*^fo-*}
-QS "L-Phone_hy_x" {*^hye-*,*^hya-*,*^hyu-*,*^hyo-*}
-QS "L-Phone_m_x" {*^ma-*,*^mi-*,*^mu-*,*^me-*,*^mo-*}
-QS "L-Phone_my_x" {*^mye-*,*^mya-*,*^myu-*,*^myo-*}
-QS "L-Phone_y_x" {*^ye-*,*^ya-*,*^yu-*,*^yo-*}
-QS "L-Phone_r_x" {*^ra-*,*^ri-*,*^ru-*,*^re-*,*^ro-*}
-QS "L-Phone_ry_x" {*^rye-*,*^rya-*,*^ryu-*,*^ryo-*}
-QS "L-Phone_w_x" {*^wi-*,*^we-*,*^wo-*,*^wa-*}
-QS "L-Phone_g_x" {*^ga-*,*^gi-*,*^gu-*,*^ge-*,*^go-*}
-QS "L-Phone_gy_x" {*^gye-*,*^gya-*,*^gyu-*,*^gyo-*}
-QS "L-Phone_gw_x" {*^gwa-*,*^gwi-*,*^gwu-*,*^gwe-*,*^gwo-*}
-QS "L-Phone_z_x" {*^za-*,*^zu-*,*^zi-*,*^ze-*,*^zo-*}
-QS "L-Phone_j_x" {*^ji-*,*^je-*,*^ja-*,*^ju-*,*^jo-*}
-QS "L-Phone_d_x" {*^da-*,*^de-*,*^di-*,*^do-*,*^du-*}
-QS "L-Phone_dy_x" {*^dye-*,*^dya-*,*^dyu-*,*^dyo-*}
-QS "L-Phone_b_x" {*^ba-*,*^bi-*,*^bu-*,*^be-*,*^bo-*}
-QS "L-Phone_by_x" {*^bya-*,*^byu-*,*^byo-*,*^bye-*}
-QS "L-Phone_v_x" {*^vu-*,*^va-*,*^vi-*,*^ve-*,*^vo-*}
-QS "L-Phone_p_x" {*^pa-*,*^pi-*,*^pu-*,*^pe-*,*^po-*}
-QS "L-Phone_py_x" {*^pye-*,*^pya-*,*^pyu-*,*^pyo-*}
 QS "L-Phone_br" {*^br-*}
 QS "L-Phone_cl" {*^cl-*}
 QS "L-Phone_pau" {*^pau-*}
@@ -200,7 +172,7 @@ QS "L-Phone_N" {*^N-*}
 
 QS "C-Phone_Vowels" {*-a+*,*-i+*,*-u+*,*-e+*,*-o+*}
 QS "C-Phone_Vowels_and_N" {*-a+*,*-i+*,*-u+*,*-e+*,*-o+*,*-N+*}
-QE "C-Phone_pau_and_sil" {*-pau+*,*-sil+*}
+QS "C-Phone_pau_and_sil" {*-pau+*,*-sil+*}
 
 QS "C-Phone_x_a" {*-a+*,*-va+*,*-bya+*,*-ka+*,*-ga+*,*-kya+*,*-gya+*,*-kwa+*,*-gwa+*,*-sa+*,*-za+*,*-sha+*,*-ja+*,*-ta+*,*-da+*,*-cha+*,*-tsa+*,*-tya+*,*-dya+*,*-na+*,*-nya+*,*-ha+*,*-ba+*,*-pa+*,*-hya+*,*-pya+*,*-fa+*,*-ma+*,*-mya+*,*-ya+*,*-ra+*,*-rya+*,*-wa+*}
 QS "C-Phone_x_i" {*-i+*,*-wi+*,*-vi+*,*-ki+*,*-gi+*,*-kwi+*,*-gwi+*,*-ji+*,*-si+*,*-zi+*,*-chi+*,*-tsi+*,*-ti+*,*-di+*,*-ni+*,*-hi+*,*-bi+*,*-pi+*,*-fi+*,*-mi+*,*-ri+*}
@@ -401,12 +373,6 @@ QS "C-Phone_N" {*-N+*}
 QS "R-Phone_Vowels" {*+a=*,*+i=*,*+u=*,*+e=*,*+o=*}
 QS "R-Phone_Vowels_and_N" {*+a=*,*+i=*,*+u=*,*+e=*,*+o=*,*+N=*}
 QS "R-Phone_pau_and_sil" {*+pau=*,*+sil=*}
-
-QS "R-Phone_x_a" {*+a=*,*+va=*,*+bya=*,*+ka=*,*+ga=*,*+kya=*,*+gya=*,*+kwa=*,*+gwa=*,*+sa=*,*+za=*,*+sha=*,*+ja=*,*+ta=*,*+da=*,*+cha=*,*+tsa=*,*+tya=*,*+dya=*,*+na=*,*+nya=*,*+ha=*,*+ba=*,*+pa=*,*+hya=*,*+pya=*,*+fa=*,*+ma=*,*+mya=*,*+ya=*,*+ra=*,*+rya=*,*+wa=*}
-QS "R-Phone_x_i" {*+i=*,*+wi=*,*+vi=*,*+ki=*,*+gi=*,*+kwi=*,*+gwi=*,*+ji=*,*+si=*,*+zi=*,*+chi=*,*+tsi=*,*+ti=*,*+di=*,*+ni=*,*+hi=*,*+bi=*,*+pi=*,*+fi=*,*+mi=*,*+ri=*}
-QS "R-Phone_x_u" {*+u=*,*+vu=*,*+byu=*,*+kyu=*,*+gyu=*,*+ku=*,*+gu=*,*+kwu=*,*+gwu=*,*+shu=*,*+ju=*,*+su=*,*+zu=*,*+chu=*,*+tsu=*,*+tyu=*,*+dyu=*,*+tu=*,*+du=*,*+nyu=*,*+nu=*,*+hyu=*,*+pyu=*,*+fu=*,*+bu=*,*+pu=*,*+myu=*,*+mu=*,*+yu=*,*+ryu=*,*+ru=*}
-QS "R-Phone_x_e" {*+ye=*,*+we=*,*+ve=*,*+e=*,*+kye=*,*+gye=*,*+kwe=*,*+gwe=*,*+ke=*,*+ge=*,*+she=*,*+je=*,*+se=*,*+ze=*,*+che=*,*+tse=*,*+te=*,*+de=*,*+dye=*,*+nye=*,*+ne=*,*+hye=*,*+bye=*,*+pye=*,*+fe=*,*+he=*,*+be=*,*+pe=*,*+mye=*,*+me=*,*+rye=*,*+re=*}
-QS "R-Phone_x_o" {*+wo=*,*+vo=*,*+byo=*,*+o=*,*+kyo=*,*+gyo=*,*+kwo=*,*+gwo=*,*+ko=*,*+go=*,*+sho=*,*+jo=*,*+so=*,*+zo=*,*+cho=*,*+tso=*,*+tyo=*,*+dyo=*,*+to=*,*+do=*,*+nyo=*,*+no=*,*+hyo=*,*+pyo=*,*+fo=*,*+ho=*,*+bo=*,*+po=*,*+myo=*,*+mo=*,*+yo=*,*+ryo=*,*+ro=*}
 
 QS "R-Phone_k_x" {*+ka=*,*+ki=*,*+ku=*,*+ke=*,*+ko=*}
 QS "R-Phone_kw_x" {*+kwa=*,*+kwi=*,*+kwu=*,*+kwe=*,*+kwo=*}
