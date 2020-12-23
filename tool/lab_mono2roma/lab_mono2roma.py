@@ -99,9 +99,11 @@ def main():
         # いったん中間フォーマットとして二次元リストにする
         intermadiate = monolabel_to_intermediate(mono_label, d_phoneme_category)
         # 変換先のかな文字ラベル
-        roma_label = intermadiate_to_romalabel(intermadiate)
+        roma_label = intermadiate_to_romalabel(intermadiate, base='vowel')
         # 母音無性化を無効にする
         uppercase_to_lowercase(roma_label)
+        # 時間を合うように直す
+        roma_label.reload()
         # ファイル出力
         path_roma_label = f'out/{now}/{basename(path_mono_label)}'
         roma_label.write(path_roma_label)
